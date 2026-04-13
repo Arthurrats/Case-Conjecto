@@ -3,6 +3,7 @@
 # Importando bibliotecas necessárias.
 from src.extract import extracao_dados
 from src.transform import transformacao_dados
+from src.analysis import analise_dado
 import os
 
 # Execução: executando a nossa extração.
@@ -42,7 +43,12 @@ def run_pipeline():
     
     print(">>> TRANSFORMAÇÃO CONCLUÍDA <<<\n")
 
-    print("\n*** PIPELINE CONCLUÍDA COM SUCESSO ***\n")
-
 if __name__ == "__main__":
     run_pipeline()
+
+
+# ETAPA 3: GERAÇÃO DE INSIGHTS.
+print("PASSO 3: GERAÇÃO DE INSIGTHS")
+analise_dado()
+
+print("\n*** PIPELINE CONCLUÍDA COM SUCESSO ***\n")
