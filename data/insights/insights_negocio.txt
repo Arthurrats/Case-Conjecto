@@ -1,0 +1,10 @@
+--- RELATÓRIO DE INSIGHTS ECONÔMICOS EM 2026 ---
+
+I. Correlação Dólar/selic: 0.35
+OBS.: Valores próximos de 1 indicam que a Selic subiu para acompanhar o Dólar.
+
+II. Volatilidade:
+O pico de variação do Dólar no período foi de 1.67%.
+
+III. Inflação Acumulada:
+A soma da variação do IPCA no período analisado foi de 1.91%.
