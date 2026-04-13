@@ -7,7 +7,7 @@ import os
 import logging
 from datetime import datetime, timedelta
 
-# Handle de arquivo: salva um arquivo de INFO na pasta 'logs'.
+# Handle de arquivo: salva um arquivo INFO de extração na pasta 'logs'.
 logging.basicConfig(
     filename='logs/pipeline.log',
     level=logging.INFO,
@@ -15,7 +15,7 @@ logging.basicConfig(
 )
 
 # Função: extrai dados do bcb (Banco Central).
-def extracao(codigo, nome_arquivo):
+def extracao_dados(codigo, nome_arquivo):
     """Consome a API do Banco Central (SGS) com tratamentos de erros."""
 
     # Definindo o período: 01/01/2026 até 3 dias atrás (D-3).
@@ -30,7 +30,7 @@ def extracao(codigo, nome_arquivo):
         logging.info(f"Iniciando a extração da série {codigo} - ({nome_arquivo})")
 
         # Limita a requisição em 15 segundos.
-        response = requests.get(url, timeout=30)
+        response = requests.get(url, timeout=15)
 
         # Verifica se o retorno da API é 200.
         response.raise_for_status()

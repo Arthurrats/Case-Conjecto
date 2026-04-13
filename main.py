@@ -1,32 +1,48 @@
 # === CÓDIGO PARA A EXECUÇÃO DA NOSSA EXTRAÇÃO ===
 
 # Importando bibliotecas necessárias.
-from src.extract import extracao
+from src.extract import extracao_dados
+from src.transform import transformacao_dados
 import os
 
 # Execução: executando a nossa extração.
 def run_pipeline():
-    print("--- INICIANDO PIPELINE DE DADOS ---\n")
-
-    # Diciónario com as séries que iremos trabalhar.
+    # Dicionário com as séries.
     series = {
         10813 : "dolar_comercial",
-        432 : "taxa_selic",
+        11 : "taxa_selic",
         433 : "inflacao"
     }
 
-    # Percorrendo as séries no dicionário.
-    for cod, nome in series.items():
-        # Chama a função de extração
-        sucesso = extracao(cod, nome)
-        
-        # Tratamento de erro para séries inexistentes.
-        if sucesso:
-            print(f"Sucesso: dados de {nome} coletados.")
-        else:
-            print(f"Erro: falha ao coletar {nome}. Verifique os logs.")
+    # ETAPA 1: EXTRAÇÃO (Camada Raw)
+    print("\nPASSO 1: EXTRAÇÃO DE DADOS (API BCB - SGS)")
 
-    print("\n--- EXTRAÇÃO CONCLUÍDA COM SUCESSO ---")
+    for cod, nome in series.items():
+        # Chama a função de extração.
+        sucesso_ext = extracao_dados(cod, nome)
+        
+        if sucesso_ext:
+            print(f"Dados de {nome.upper()} coletados.")
+        else:
+            print(f"Falha ao coletar {nome.upper()}. Verifique os logs.")
+
+    print(">>> EXTRAÇÃO CONCLUÍDA <<<\n")
+
+    # ETAPA 2: TRANSFORMAÇÃO (Camada Silver)
+    print("PASSO 2: TRANSFORMAÇÃO E LIMPEZA")
+
+    for nome in series.values():
+        # Chama a função de transformação.
+        sucesso_trans = transformacao_dados(nome)
+        
+        if sucesso_trans:
+            print(f"Dados de {nome.upper()} transformados.")
+        else:
+            print(f"Falha ao transformar {nome.upper()}.")
+    
+    print(">>> TRANSFORMAÇÃO CONCLUÍDA <<<\n")
+
+    print("\n*** PIPELINE CONCLUÍDA COM SUCESSO ***\n")
 
 if __name__ == "__main__":
     run_pipeline()
