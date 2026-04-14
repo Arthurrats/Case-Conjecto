@@ -4,11 +4,18 @@ Este projeto consiste em uma Pipeline de Dados automatizada que extrai, transfor
 
 O objetivo é fornecer uma visão clara e analitica da relação entre política monetária, câmbio e custo de vida no cenário de 2026.
 
+
+## 📖 Guia de Navegação
+Os arquivos de evidência deste desafio foram centralizados na pasta */evidencias*. Para entender a metodologia aplicada e as instruções de execução, consulte o respectivo *README.md*.
+
+* [**README.md**](./evidencias/README.md)
+
+
 ## 🏗️ Estrutura do Projeto
 
 A solução foi desenhada seguindo os princípios de modularização e separação de responsabilidades:
 
-![Arquitetura da Pipeline](./pipeline_arquitetura.png)
+![Arquitetura da Pipeline](./evidencias/pipeline_arquitetura.png)
 
 ### Estrutura de diretório
 
