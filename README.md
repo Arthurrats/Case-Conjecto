@@ -34,7 +34,16 @@ CASE_CONJECTO/
 
 A pipeline foi totalmente "dockerizada" para garantir que rode em qualquer ambiente sem necessidade de instalar dependências localmente.
 
-**1. Pré-requisitos**
+**1. Clonar o Repositório**
+
+```
+git clone [https://github.com/arthurrats/case_conjecto.git](https://github.com/seu-usuario/case_conjecto.git)
+```
+```
+cd case_conjecto
+```
+
+**2. Pré-requisitos**
 
 ```text
 Docker instalado e rodando.
