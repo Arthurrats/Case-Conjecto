@@ -37,8 +37,9 @@ A pipeline foi totalmente "dockerizada" para garantir que rode em qualquer ambie
 **1. Clonar o Repositório**
 
 ```
-git clone [https://github.com/arthurrats/case_conjecto.git](https://github.com/arthurrats/case_conjecto.git)
+git clone https://github.com/arthurrats/case_conjecto.git
 ```
+
 ```
 cd case_conjecto
 ```
