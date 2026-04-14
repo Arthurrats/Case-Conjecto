@@ -1,15 +1,15 @@
-2026-04-13 23:34:07,362 - INFO - generated new fontManager
-2026-04-13 23:34:07,604 - INFO - Iniciando a extração da série 10813 - (dolar_comercial)
-2026-04-13 23:34:08,311 - INFO - Sucesso: 68 registros salvos em data/raw/dolar_comercial.csv.
-2026-04-13 23:34:08,312 - INFO - Iniciando a extração da série 11 - (taxa_selic)
-2026-04-13 23:34:09,133 - INFO - Sucesso: 68 registros salvos em data/raw/taxa_selic.csv.
-2026-04-13 23:34:09,134 - INFO - Iniciando a extração da série 433 - (inflacao)
-2026-04-13 23:34:09,845 - INFO - Sucesso: 3 registros salvos em data/raw/inflacao.csv.
-2026-04-13 23:34:09,846 - INFO - --- INICIANDO A TRANSFORMAÇÃO: dolar_comercial ---
-2026-04-13 23:34:09,853 - INFO - Sucesso: o dolar_comercial foi salvo com sucesso em data/processed/dolar_comercial_clean.csv.
-2026-04-13 23:34:09,854 - INFO - --- INICIANDO A TRANSFORMAÇÃO: taxa_selic ---
-2026-04-13 23:34:09,858 - INFO - Sucesso: o taxa_selic foi salvo com sucesso em data/processed/taxa_selic_clean.csv.
-2026-04-13 23:34:09,858 - INFO - --- INICIANDO A TRANSFORMAÇÃO: inflacao ---
-2026-04-13 23:34:09,862 - INFO - Sucesso: o inflacao foi salvo com sucesso em data/processed/inflacao_clean.csv.
-2026-04-13 23:34:10,057 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2026-04-13 23:34:10,060 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-04-14 00:24:12,197 - INFO - generated new fontManager
+2026-04-14 00:24:12,446 - INFO - Iniciando a extração da série 10813 - (dolar_comercial)
+2026-04-14 00:24:12,757 - INFO - Sucesso: 68 registros salvos em data/raw/dolar_comercial.csv.
+2026-04-14 00:24:12,758 - INFO - Iniciando a extração da série 11 - (taxa_selic)
+2026-04-14 00:24:13,107 - INFO - Sucesso: 68 registros salvos em data/raw/taxa_selic.csv.
+2026-04-14 00:24:13,108 - INFO - Iniciando a extração da série 433 - (inflacao)
+2026-04-14 00:24:13,532 - INFO - Sucesso: 3 registros salvos em data/raw/inflacao.csv.
+2026-04-14 00:24:13,533 - INFO - --- INICIANDO A TRANSFORMAÇÃO: dolar_comercial ---
+2026-04-14 00:24:13,541 - INFO - Sucesso: o dolar_comercial foi salvo com sucesso em data/processed/dolar_comercial_clean.csv.
+2026-04-14 00:24:13,541 - INFO - --- INICIANDO A TRANSFORMAÇÃO: taxa_selic ---
+2026-04-14 00:24:13,546 - INFO - Sucesso: o taxa_selic foi salvo com sucesso em data/processed/taxa_selic_clean.csv.
+2026-04-14 00:24:13,546 - INFO - --- INICIANDO A TRANSFORMAÇÃO: inflacao ---
+2026-04-14 00:24:13,549 - INFO - Sucesso: o inflacao foi salvo com sucesso em data/processed/inflacao_clean.csv.
+2026-04-14 00:24:13,743 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-04-14 00:24:13,746 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
