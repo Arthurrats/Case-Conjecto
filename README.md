@@ -46,9 +46,11 @@ cd case_conjecto
 
 **2. Pré-requisitos**
 
-```text
-Docker instalado e rodando.
-```
+
+* Docker Desktop **instalado** e em **execução**.
+
+* (**Para usuários Windows**): Certifique-se de que o Docker esteja iniciado (*ícone da baleia verde*).
+
 
 **3. Construir a Imagem**
 
@@ -60,11 +62,28 @@ docker build -t case_conjecto .
 
 **4. Rodar a Pipeline**
 
-Para que os dados e gráficos gerados fiquem salvos na sua máquina, utilize o mapeamento de volumes:
+Para que os gráficos e logs gerados dentro do Docker apareçam na sua máquina host, utilize o mapeamento de volumes:
 
-```text
+* No Windows (Prompt de Comando / CMD):
+
+```
+docker run -v "%cd%/data:/app/data" -v "%cd%/logs:/app/logs" case_conjecto
+```
+
+* No Linux ou macOS (Terminal):
+
+```
 docker run -v $(pwd)/data:/app/data -v $(pwd)/logs:/app/logs case_conjecto
 ```
+
+## 📁 Exploração dos Resultados
+
+Após o término da execução, os artefatos estarão disponíveis localmente:
+
+* **Gráficos Analíticos:** Veja em `data/insights/*.png` para análises visuais de tendência.
+* **Relatórios Executivos:** Confira `data/insights/*.txt` para um resumo técnico da volatilidade e correlação.
+* **Base de Dados (Silver):** Acesse `data/processed/*.csv` para os dados limpos e prontos para modelagem.
+* **Monitoramento:** Verifique `logs/pipeline.log` para conferir o sucesso de cada etapa da execução.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -77,13 +96,3 @@ docker run -v $(pwd)/data:/app/data -v $(pwd)/logs:/app/logs case_conjecto
 **Matplotlib** & **Seaborn**: Geração de gráficos.
 
 **Docker**: Conteinerização da aplicação.
-
-## O que essa Pipeline entrega?
-
-Ao final da execução, verifique a pasta *data/insights* para encontrar:
-
-**Relatório Visual:** Comparativo entre a variação do Dólar e a taxa Selic.
-
-**Relatório de Inflação**: Gráfico de barras com a evolução mensal do IPCA.
-
-**Insights de Negócio**: Um sumário em texto com correlação estatística e volatilidade.
