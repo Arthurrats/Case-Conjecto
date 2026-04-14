@@ -49,7 +49,7 @@ cd case_conjecto
 Docker instalado e rodando.
 ```
 
-**2. Construir a Imagem**
+**3. Construir a Imagem**
 
 No terminal, dentro da pasta do projeto, execute:
 
@@ -57,7 +57,7 @@ No terminal, dentro da pasta do projeto, execute:
 docker build -t case_conjecto .
 ```
 
-**3. Rodar a Pipeline**
+**4. Rodar a Pipeline**
 
 Para que os dados e gráficos gerados fiquem salvos na sua máquina, utilize o mapeamento de volumes:
 
